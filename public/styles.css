@@ -4,7 +4,7 @@ html{
 }
 /* Unvisited link */
 a:link {
-    color: white;
+    color: skyblue;
 }
 /* Visited link */
 a:visited {
@@ -16,6 +16,8 @@ a:hover {
 }
 /* Selected link (when clicked) */
 a:active {
-    color: orange;
+    color: skyblue;
 }
-
+.main{
+    font-size: 50px;
+}
