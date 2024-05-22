@@ -1,3 +1,3 @@
 # CyberSpear
-My Learning Progress as an Ethical Hacker.
+My Journey in Ethical Hacking and Web Development.
 https://cyberspear.de
