@@ -38,22 +38,29 @@
 
     </div>
     <div class="blog">
-      <h1 class = montserrat-h1>Double Char</h1>
-    <p>Given a string, you have to return a string in which each character (case-sensitive) is repeated once.</p>
+      <h1 class = montserrat-h1>Remove First and Last Character</h1>
+    <p>It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. 
+      You're given one parameter, the original string. You don't have to worry about strings with less than two characters.</p>
         <div class="container mt-5">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title"></h5>
-                    <pre><code>function doubleChar(str) {
-                      var output = [];
-                      var numberOfCharacters = str.length;
-                      for (var i = 0; i < numberOfCharacters; i++) {
-                        output.push(str[i] + str[i]);
-                      }
-                      return output.join('');
-                    }
-                    
-    }</code></pre>
+                    <pre><code>function removeChar(str){
+                      //You got this!
+                       var output = [];
+                       var numberOfCharacters = str.length;
+                       for (var i = 0; i < numberOfCharacters; i++){
+                         if (i != 0 && i != numberOfCharacters - 1){
+                           output.push(str[i]);
+                         }
+                       }
+                       return output.join('');
+                     }
+                     
+                     
+                     
+                     
+                     </code></pre>
                 </div>
             </div>
         </div>
