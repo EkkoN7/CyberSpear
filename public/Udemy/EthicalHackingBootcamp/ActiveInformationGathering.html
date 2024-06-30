@@ -38,16 +38,23 @@
         </header>
     </div>
     <div class="blog">
-      <h1 class = montserrat-h1>Ethical Hacking Bootcamp</h1>
-      <p>Hello,
-        My initial encounter with ethical hacking occurred during a significant discount on Udemy while I was exploring activities I could do with Python. 
-        Fortunately, this led me to discover my niche in the IT world.<hr />        
-        Important: In this course, I utilize VirtualBox. Kali Linux is the operating system I use for ethical hacking, and Metasploitable is the systems I practice on. 
-        I ensure not to apply any hacking tools on systems other than those I personally own and operate.</p><hr />        
-      <h3>Content:</h3>  
-      <a href="./ActiveInformationGathering.html">Active Information Gathering</a>
-      <a href="./DownloadTools.html">How to download Tools?</a>
-      <a href="./Scanning.html">Scanning</a>
+        <h1 class = montserrat-h1>Active Information Gathering</h1>
+        <p>Tools that can be used to gather information about a website include:</p>
+        <ul>
+            <li>nslookup:<br />This command is a network administration tool used in the command line to query the Domain Name System (DNS). 
+                It retrieves the mapping between a domain name and its IP address, along with other DNS records.</li>
+            <li>whois:<br /> The 'whois' command in Linux is used to obtain information about a domain, including the domain's owner, 
+                the contact details of the owner, and the nameservers assigned to the domain.</li>
+            <li>whatweb:<br /> WhatWeb identifies various web technologies such as content management systems (CMS), blogging platforms,
+                statistical/analytics packages, JavaScript libraries, web servers, and embedded devices.
+                Documenting gathered information is always beneficial. To achieve this with WhatWeb, 
+                simply include "--log-verbose=nameOfFile" in the command line. For enhanced readability, you may include the "-v" option and the "--no-errors" flag.</li>
+            <li>theHaverster:<br /> TheHarvester is utilized for collecting open-source intelligence (OSINT) on a company or domain. From the command line, you can specify 
+                which search engine you prefer to use, such as Google, Bing, Yahoo, etc. You can discover many additional options by using 'theHarvester --help' command.
+                For instance, the command 'theHarvester -d google.com -b all' could be used, where '-d' represents the domain and '-b' specifies the sources.</li>
+        </ul>
+
+
     </div>  
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </main>
