@@ -29,7 +29,6 @@
     display: flex;
     position: ab;
     gap: 5px;
-    margin-left: 5px;
     margin-top: -10px;
     justify-content: flex-start;
 }
