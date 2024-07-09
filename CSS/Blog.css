@@ -6,6 +6,10 @@
     margin: 0 auto; /* Center the content horizontally */
     padding: 20px; /* Optional: add some padding */
 }
+
+.udemy {
+  margin: 10px;
+
 .content{
   display: grid;
 }
