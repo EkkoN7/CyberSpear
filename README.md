@@ -1,5 +1,5 @@
 #Learning Diary: Journey to Becoming a Penetration Tester
-https://cyberspear.de/
+
 
 Welcome! I document my progress in cybersecurity, focusing on web application penetration testing.
 
@@ -15,3 +15,4 @@ I'm seeking an internship for Winter 2024. Connect with me:
 - LinkedIn: https://www.linkedin.com/in/denisdurban/
 
 Thank you for visiting!
+https://cyberspear.de/
