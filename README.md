@@ -1,5 +1,4 @@
-#Learning Diary: Journey to Becoming a Penetration Tester
-
+#Learning Diary: Journey to Becoming a Bug Bounty Hunter
 
 Welcome! I document my progress in cybersecurity, focusing on web application penetration testing.
 
