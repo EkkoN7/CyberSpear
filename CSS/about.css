@@ -62,5 +62,5 @@ body {
 
 .name-on-right {
     margin-right: 200px;
-    font-size: 4rem; /* Adjust the font size as needed */
+    font-size: auto; /* Adjust the font size as needed */
   }
