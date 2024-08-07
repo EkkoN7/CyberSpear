@@ -34,7 +34,6 @@ body {
 
 /* Link Styles */
 .aboutMe a {
-    color: #5B99C2; /* Light blue color for links to stand out against white text */
     text-decoration: none; /* Removes underline from links */
 }
 
@@ -54,7 +53,6 @@ body {
 }
 
 .aboutMe ul li a {
-    color: #5B99C2; /* Light blue color for links */
     text-decoration: none; /* Removes underline from links */
 }
 
