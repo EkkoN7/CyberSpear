@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+# Disallow specific directories
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /backup/
+
+# Disallow specific files
+Disallow: /secret-page.html
+
+# Allow all crawlers to access everything else
+Allow: /
+
+# Sitemap location
+Sitemap: https://cyberspear.de/sitemap.xml
+
