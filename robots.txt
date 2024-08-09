@@ -1,13 +1,10 @@
-User-agent: *
-Disallow: /wp-admin/
-Allow: /wp-admin/admin-ajax.php
+# robots.txt file for https://github.com/EkkoN7/CyberSpear
 
-# Disallow specific directories
+# Allow all search engines access to everything
+User-agent: *
 Disallow: /private/
 Disallow: /tmp/
 Disallow: /backup/
-
-# Disallow specific files
 Disallow: /secret-page.html
 
 # Allow all crawlers to access everything else
