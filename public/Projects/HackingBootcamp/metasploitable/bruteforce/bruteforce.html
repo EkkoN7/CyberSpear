@@ -41,10 +41,19 @@
         <img src="./01.jpg" width="auto" length="auto">
         <p>Next, I started the Metasploit Framework and searched for an auxiliary scanner for SSH. I found one that could be useful.</p>
         <img src="./02.jpg" width="auto" length="auto">
-        <p>Within the show options, there are many settings available. I can specify whether I want to test with a single password or use a file containing multiple passwords. 
+        <p>Within the show options, there are many settings available. I can specify whether I want to test with a single password/username or use a file containing multiple passwords/usernames. 
         I chose to use the password file for this attempt.</p>
         <img src="./03.jpg" width="auto" length="auto">
-        
+        <p>I created a file with some basic misconfigured usernames and passwords.</p><br />
+        <p>Usernames</p>
+        <img src="./04.png" width="auto" length="auto">
+        <p>Passwords</p>
+        <img src="./05.png" width="auto" length="auto"><br />
+        <p>Afterward, I need to set them up in the Metasploit Framework.</p>
+        <img src="./06.png" width="auto" length="auto">
+        <img src="./07.jpg" width="auto" length="auto">
+        <p>The scanner runs through both lists I created, testing each username with each password until it either finishes or succeeds. It's not the fastest method, 
+          but it's a simple introduction to brute force attacks. It's also worth noting that I already knew the correct username and password, so success was inevitable.</p>     
 
     <p></p>
 
