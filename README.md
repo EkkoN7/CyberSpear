@@ -1,17 +1,16 @@
-#Learning Diary: Journey Through the Digital World
+Learning Diary: Journey Through the Digital World
 
-Welcome! I document my progress in cybersecurity, focusing on web application penetration testing.
+Welcome! I document my progress and experiences in the IT field, with a focus on cybersecurity and web development.
+About Me
 
-#About Me
+I'm Denis Durban from Germany. I am currently seeking IT entry-level opportunities and am enthusiastic about exploring diverse IT fields. I hold a Google Cybersecurity Certificate and plan to pursue a Computer Science (CS) degree in 2025. My journey into technology began with a personal interest in programming and has evolved into a passion for various aspects of IT.
+Contact
 
-I'm Denis Durban from Germany. In October 2024, I will begin a dual Computer Science degree at IU University. I'm passionate about cybersecurity and web development.
+I am open to connecting and exploring opportunities for growth in the IT industry. You can reach me at:
 
-#Contact
-
-I'm seeking an internship for Winter 2024. Connect with me:
-
-- Email: Cyberspear@outlook.de
-- LinkedIn: https://www.linkedin.com/in/denisdurban/
+    Email: Cyberspear@outlook.de
+    LinkedIn: linkedin.com/in/denisdurban
 
 Thank you for visiting!
-https://cyberspear.de/
+
+Visit my blog: cyberspear.de
