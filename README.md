@@ -4,6 +4,7 @@ Welcome! I document my progress and experiences in the IT field, with a focus on
 
 About Me:
 I'm Denis Durban from Germany. I am currently seeking IT entry-level opportunities and am enthusiastic about exploring diverse IT fields. I hold a Google Cybersecurity Certificate and plan to pursue a Computer Science (CS) degree. My journey into technology began with a personal interest in programming and has evolved into a passion for various aspects of IT.
+
 Contact
 
 I am open to connecting and exploring opportunities for growth in the IT industry. You can reach me at:
