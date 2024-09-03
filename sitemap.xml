@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://cyberspear.de/</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/index.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/htb.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/JavaScript.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Projects/Projects.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Tech%20Discovery%20Journal/Journal.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/AboutMe/About.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier1/Three.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier1/Responder.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier1/Crocodile.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier1/Appointment.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier1/Sequel.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier0/Meow.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier0/Fawn.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier0/Dancing.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier0/Reedemer.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier0/Explosion.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier0/Preignition.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier0/Mongod.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/htb/Tier0/Synced.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/IsHeGonnaSurvive.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/ReduceButGrow.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/SquareOfSquares.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/SetAlarm.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/DoubleChar.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/RemoveFirst&amp;LastCharacter.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/ReversedStrings.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/ConvertBooleanToStrings.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/SmallestInt.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/Initials.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/VowelCount.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/StringRepeat.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/SumTwoInt.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/Messi.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/palindrome.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/SwitchItUp.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/ListFiltering.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/DescendingOrder.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/StrayNumber.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/SquareEveryDigit.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/DNAtoRNA.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/SumNumbers.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/DifferenceVolumes.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/OddOrEven.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/countSheep.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/2to1.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/MiddleCharacter.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/CountDivisors.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/HighestProfit.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/Mumbling.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/ReversedSequence.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/MiddleElement.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/WillYouMakeIt.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/Cat&amp;DogYears.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/TwoSum.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/BinaryAddition.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/HowGoodAreYouReally.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Fundamentals/triangle.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Easy/%20PalindromeNumber.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/JavaScript/Easy/TwoSum.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Projects/HackingBootcamp/metasploitable/vnc/vnc.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Projects/HackingBootcamp/metasploitable/unrealIRCd/unrealIRCd.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Projects/HackingBootcamp/metasploitable/distcc/distcc.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Projects/HackingBootcamp/bootcamp.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Projects/GameDevelopment/FranksLaboratory/SpaceInvaders.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Tech%20Discovery%20Journal/August/MyLinuxJourney.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/AboutMe/EngagedWith.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/AboutMe/MoreAboutMe.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Projects/HackingBootcamp/metasploitable/vsftpd%202.3.4/vsftpd.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Projects/HackingBootcamp/metasploitable/bindshell/bindshell.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Projects/HackingBootcamp/metasploitable/telnet/telnet.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Projects/HackingBootcamp/metasploitable/samba/samba.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://cyberspear.de/public/Projects/HackingBootcamp/metasploitable/bruteforce/bruteforce.html</loc>
+  <lastmod>2024-09-03T19:13:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
