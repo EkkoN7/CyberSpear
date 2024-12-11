@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CyberSpear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../CSS/styles.css">
+  <link rel="stylesheet" href="../../../CSS/Blog.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class=".container-fluid">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4"> <img src="../../../assets/images/Cyberspear/Header.png" height="30px" width="auto" alt="logo"></span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="../../../index.html" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="../../Projects/Projects.html" class="nav-link">Projects</a></li>
+      <li class="nav-item"><a href="../Journal.html" class="nav-link">Tech Discovery Journal</a></li>
+      <li class="nav-item"><a href="../../AboutMe/About.html" class="nav-link">About me</a></li>
+    </ul>
+  </header>
+</section>
+
+    </div>
+    <div class="blog">
+      <h1 class = montserrat-h1>Linux Fortification</h1>
+    <p>Hello everyone,<br /> 
+      Ever feel like your Linux system could use a little extra armor?<br /> Recently I wrote about Qubes OS, but sadly my Intel processor just can’t handle it.
+      I really like my current setup with CachyOS. That’s why I needed another solution because using a virtual machine to separate each application provides great isolation from the rest of
+      the system.<br /> First, I thought about installing a very lightweight OS on VirtualBox for using Firefox, but this isn’t practical because of too many extra steps just to use Firefox. Then I
+      read about Firejail.<br />
+      Firejail can put any program on Linux into a sandbox, which means that the app inside the sandbox is isolated from the rest of the system - similar to a virtual machine, but not the same.
+      Because a virtual machine creates a whole new OS, Firejail just puts the app inside a sandbox. It’s still a great way to fortify myself. So in this blog post, I like to share my
+      configurations on Firefox and how I used Firejail to simplify and fortify my Linux.
+    </p>
+    <hr />
+    <p>I am going to start with my <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a> setup. I use those Extensions:
+      <ul>
+        <li><a href="https://surfshark.com/" target="_blank">Surfshark</a>: Surfshark is a fantastic tool for boosting your privacy online. Based in the Netherlands, they prioritize user anonymity by not keeping any browsing records. They offer robust VPN
+          protection, but also provide CleanWeb, which blocks ads, trackers, and annoying cookie pop-ups, giving you a cleaner and more streamlined browsing experience.</li>
+        <li><a href="https://github.com/gorhill/uBlock#ublock-origin" target="_blank">uBlock</a>: uBlock Origin is an absolute essential browser extension for anyone who wants to banish those pesky ads, trackers, and other online nuisances. While Surfshark's CleanWeb already does
+          a great job of this, it never hurts to double down on protection. Better safe than sorry, right?</li>
+        <li><a href="https://sereneblue.github.io/chameleon/" target="_blank">Chameleon</a>: Chameleon is my absolute favorite extension.  The idea of seamlessly disguising your OS and browser just blows me away! That's exactly what Chameleon delivers. Whether I'm using Linux,
+        a website might think I'm browsing from Windows, a different Linux distribution, a MacBook, even an iPhone or Android device. When paired with Surfshark's VPN, it creates an incredibly
+        layered approach to online privacy.</li>
+        <li><a href="https://privacybadger.org/" target="_blank">Privacy Badger</a>: Privacy Badger is another essential tool in the fight against online trackers. This extension focuses solely on blocking trackers, keeping your privacy safe and sound.</li>
+        <li><a href="https://addons.mozilla.org/en-US/firefox/addon/clearurls/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search" target="_blank">ClearURLs</a>: ClearURLs is a truly brilliant extension! I had no idea about this until recently, but many URLs include sneaky trackers hidden within them. For example, when you look at a product on
+          Amazon, the URL can be ridiculously long because much of it is made up of tracking code. ClearURLs steps in and removes all those trackers, leaving only the essential parts of the URL.</li>
+        <li><a href="https://addons.mozilla.org/en-US/firefox/addon/noscript/" target="_blank">NoScript Security Suite</a>: As described on the official website "... NoScript gives you the best available protection on the web. It allows JavaScript, Flash, and other executable content to run only from trusted domains of your choice (e.g. your banking site), thus mitigating remotely exploitable vulnerabilities, such as Spectre and Meltdown.
+        It protects your "trust boundaries" against cross-site scripting attacks (XSS), cross-zone DNS rebinding / CSRF attacks (router hacking), and Clickjacking attempts, thanks to its unique ClearClick technology. ..."</li>
+        <li><a href="https://bitwarden.com/" target="_blank">Bitwarden</a>: Bitwarden has become an absolute lifesaver for me! It not only helps me locate login information for websites I'd completely forgotten about, but it also ensures my passwords are
+          always rock-solid. It does more than just generate strong passwords with customizable numbers, letters, and special characters—it actively keeps track of compromised passwords, alerting me to any potential
+          security risks.</li>
+        <li><a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a>: Within Firefox settings, navigate to the "Privacy & Security" tab and enable "HTTPS-Only Mode." This ensures all browsing occurs over secure HTTPS
+          connections, protecting your data. Remember to always avoid HTTP websites and never enter sensitive information (credentials) on unsecured sites.  HTTP lacks encryption, making your input vulnerable.<br />
+          And did you know Firefox already runs within a security sandbox? To check if it's enabled, open a new tab and type "about:support" in the address bar.
+          Look for the "Sandbox" section in the results. This feature helps isolate Firefox from your system, providing an extra layer of protection. 
+        </li>
+      </ul>
+    </p>
+    <hr />
+    <p>Extensions are fantastic, but safeguarding my own data is most important.<br />
+      I've spent time on the <a href="https://www.reddit.com/r/microsoft/" target="_blank">Microsoft subreddit</a>, and it felt like daily posts about compromised accounts — a stark
+      reminder of online threats.<br />I've explored various email providers, and yes, I know many people criticize Microsoft. But their privacy settings for email truly impress me.
+      <a href="https://www.microsoft.com" target="_blank">Microsoft</a> allows you to create aliases, essentially multiple email addresses that share a single mailbox.<br /> I've gone a little overboard with this!  I have aliases specifically for
+      Bitwarden and my Microsoft account – never used for anything else, registered nowhere except within Microsoft.<br />
+      Then there are aliases for different purposes: one for my blog, another for private use, even ones for registering on various websites. The beauty is, all these emails land in the same
+      inbox.  And here's the clincher: you can choose which alias grants access to your accounts. So, none of the addresses I use for website registration can ever be used to log into
+      Bitwarden or Microsoft—keeping my login information incredibly secure when combined with 2FA.</p>
+
+    <hr />
+    <p>Finally, I’ll tell you how I fortified my Cachy OS with <a href="https://github.com/netblue30/firejail" target="_blank">Firejail</a>. Normally, to start an application via Firejail, it’s needed to open a terminal and write the command – for example:
+      “Firejail firefox”. But I’m not only using Firefox; I’m a fox by myself!  I can’t take all the credit, but with help from ChatGPT, I created a file to make an icon that automatically
+      opens my desired app via Firejail, making those previous steps completely useless.<br /> I will explain the file and show it on the example of Firefox.
+    </p>
+    <div class="container mt-5">
+      <div class="card">
+          <div class="card-body">
+              <h5 class="card-title"></h5>
+              <pre><code>
+[Desktop Entry]
+Name=Firefox (Firejail)
+Comment=Browse the web with Firefox in a Firejail sandbox
+Exec=firejail firefox
+Icon=firefox
+Terminal=false
+Type=Application
+Categories=Network;WebBrowser;                 
+              </code></pre>
+          </div>
+      </div>
+  </div>
+    <p> 
+      You can create a similar setup yourself! Use a text editor like nano to create a new file and paste this code into it. The script is fairly straightforward and mostly
+      self-explanatory.  The crucial line is "Exec=firejail firefox", which executes Firejail with Firefox as the target application every time you click the newly created icon named
+      "Firefox (Firejail)".  The "Terminal=false" setting ensures that the application runs as a graphical program, not within a terminal window.<br />
+      And here's the best part! You can create these types of files for any application you want to run in Firejail. Simply change "firefox" to the command you want to execute, and you have an icon for secure, isolated app usage.
+    </p>
+    <hr />
+    <p>Remember, no security setup guarantees complete protection. There's always a possibility of compromise, no matter how robust your defenses. However, by implementing these
+      measures, you significantly reduce your risk and make it much harder for attackers to succeed. Stay informed about potential threats and remain vigilant, because Cybersecurity is an ongoing
+      journey!</p>
+    </div>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+          <div class="mb-3">
+            <a href="https://github.com/EkkoN7" class="text-light mx-2" target="_blank">GitHub</a>
+            <a href="https://gitlab.com/EkkoN7" class="text-light mx-2" target="_blank">GitLab</a>
+            <a href="https://www.codewars.com/users/EkkoN7" class="text-light mx-2" target="_blank">Codewars</a>
+            <a href="https://leetcode.com/u/EkkoN7/" class="text-light mx-2" target="_blank">Leetcode</a>
+            <a href="https://www.linkedin.com/in/denisdurban/" class="text-light mx-2" target="_blank">LinkedIn</a>
+            <a href="https://hackerone.com/ekkon7?type=user" class="text-light mx-2" target="_blank">HackerOne</a>
+          </div>
+    
+          <div class="mb-3">
+              <p class="m-0">Contact me: <a href="mailto:Cyberspear@outlook.de" target="_blank" class="text-light">CyberSpear@outlook.de</a></p>
+          </div>
+    
+          <div class="border-top border-light pt-3">
+            <p>Disclaimer: Content from external platforms is owned by their respective owners.</p>        
+            <p class="m-0">&copy; <span id="year"></span> Cyberspear. All rights reserved.</p>
+          </div>
+      </div>
+    </footer> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <script>
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+    
+      // Update the content of the element with id "year"
+      document.getElementById("year").textContent = currentYear;
+    </script>
+    
+    </body>
+    </html>
