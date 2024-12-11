@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CyberSpear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../CSS/styles.css">
+  <link rel="stylesheet" href="../../../CSS/Blog.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class=".container-fluid">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4"> <img src="../../../assets/images/Cyberspear/Header.png" height="30px" width="auto" alt="logo"></span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="../../../index.html" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="../../Projects/Projects.html" class="nav-link">Projects</a></li>
+      <li class="nav-item"><a href="../../Tech Discovery Journal/Journal.html" class="nav-link">Tech Discovery Journal</a></li>
+      <li class="nav-item"><a href="../../AboutMe/About.html" class="nav-link">About me</a></li>
+    </ul>
+  </header>
+</section>
+    <div class="blog">
+        <h1 class = montserrat-h1>SQL Injection</h1>
+        <p>I began by conducting an nmap version scan and found Port 80 open.</p>
+        <img src="./img/Appointment/001.png" height="auto">
+        <p>I then opened Firefox and navigated to the website associated with this IP address. The site revealed a login page requiring a password.</p>
+        <img src="./img/Appointment/002.png" height="auto">
+        <p>Next, I opened a new terminal tab and ran Dirb to search for potential directories.</p>
+        <img src="./img/Appointment/003.png" height="auto">
+        <p>I looked inside the JS file and also opened the '/image/' directory but didn't find any useful information. The JS file was not minified or obfuscated in any way.</p>
+        <img src="./img/Appointment/004.png" height="auto">
+        <img src="./img/Appointment/005.png" height="auto">
+        <p>In another tab, I launched Nikto to identify any outdated versions used by the website.</p>
+        <img src="./img/Appointment/006.png" height="auto">
+        <p>Additionally, I initiated Gobuster in a separate tab to search for and potentially brute-force directories using the common.txt, big.txt and indexes.txt files from Dirb.
+            I navigated to '/usr/share/dirb/wordlists' to try different txt files.</p>
+        <img src="./img/Appointment/007.png" height="auto">
+        <p>The 'common.txt' file, when used with gobuster, actually resulted in 1 directory fewer than when using dirb. The directory 'vendor' could only be found by gobuster using the 'big.txt' wordlist.</p>
+        <img src="./img/Appointment/008.png" height="auto">
+        <img src="./img/Appointment/009.png" height="auto">
+        <img src="./img/Appointment/010.png" height="auto">
+        <img src="./img/Appointment/011.png" height="auto">
+        <p>Since I could not find anything useful in any directory or in the JS files, I attempted some common misconfigured usernames and passwords such as admin:admin, guest:guest, user:user, root:root, and administrator:password.
+            While testing those usernames and passwords, I also attempted to use special characters for a possible injection, and it appears that special characters are indeed allowed.
+            That's why I attempt using the username admin'#. Adding the hashtag will comment out the rest of the query, rendering the search for a matching password for the specified username unnecessary. 
+            The script will now only check if any entry exists with the username 'admin'. Fortunately, I was successful in this case. There is indeed an account named 'admin', validating our SQL Injection.</p>
+        <img src="./img/Appointment/012.png" height="auto">
+        <img src="./img/Appointment/013.png" height="auto">
+    
+        <footer class="bg-dark text-light py-4">
+          <div class="container text-center">
+              <div class="mb-3">
+                <a href="https://github.com/EkkoN7" class="text-light mx-2" target="_blank">GitHub</a>
+                <a href="https://gitlab.com/EkkoN7" class="text-light mx-2" target="_blank">GitLab</a>
+                <a href="https://www.codewars.com/users/EkkoN7" class="text-light mx-2" target="_blank">Codewars</a>
+                <a href="https://leetcode.com/u/EkkoN7/" class="text-light mx-2" target="_blank">Leetcode</a>
+                <a href="https://www.linkedin.com/in/denisdurban/" class="text-light mx-2" target="_blank">LinkedIn</a>
+                <a href="https://hackerone.com/ekkon7?type=user" class="text-light mx-2" target="_blank">HackerOne</a>
+              </div>
+        
+              <div class="mb-3">
+                  <p class="m-0">Contact me: <a href="mailto:Cyberspear@outlook.de" target="_blank" class="text-light">CyberSpear@outlook.de</a></p>
+              </div>
+        
+              <div class="border-top border-light pt-3">
+                <p>Disclaimer: Content from external platforms is owned by their respective owners.</p>        
+                <p class="m-0">&copy; <span id="year"></span> Cyberspear. All rights reserved.</p>
+              </div>
+          </div>
+        </footer> 
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        
+        <script>
+          // Get the current year
+          const currentYear = new Date().getFullYear();
+        
+          // Update the content of the element with id "year"
+          document.getElementById("year").textContent = currentYear;
+        </script>
+        
+        </body>
+        </html>
+
+  
