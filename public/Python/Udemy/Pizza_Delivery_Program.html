@@ -37,38 +37,89 @@
     <div class="blog">
       <h1 class = montserrat-h1>Pizza Delivery</h1>
     <p><a href="https://www.udemy.com/course/100-days-of-code/">100 Days of Code: The Complete Python Pro Bootcamp</a> Day 3. </p><br />
-    <p>My code:</p>
+    <p>My first code, but it didn't address the problem of any false input.:</p>
         <div class="container mt-5">
             <div class="card">
                 <div class="card-body">
                     <h5 class="card-title"></h5>
                     <pre><code>
-                        print("Welcome to Python Pizza Delivery!")
-                        size = input("What size pizza do you want? S, M or L: ")
-                        pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
-                        extra_cheese = input("Do you want extra cheese? Y or N: ")
-                        small_Pizza = 15
-                        medium_Pizza = 20
-                        large_pizza = 25
-                        add_pepperoni = 2
-                        add_extra_cheese = 1
-                        bill = 0
+print("Welcome to Python Pizza Delivery!")
+size = input("What size pizza do you want? S, M or L: ")
+pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
+extra_cheese = input("Do you want extra cheese? Y or N: ")
+small_Pizza = 15
+medium_Pizza = 20
+large_pizza = 25
+add_pepperoni = 2
+add_extra_cheese = 1
+bill = 0
                         
-                        #size
-                        if size == "S":
-                            bill += small_Pizza
-                        elif size == "M":
-                            bill += medium_Pizza
-                        elif size == "L":
-                            bill += large_pizza
+#size
+if size == "S":
+    bill += small_Pizza
+elif size == "M":
+    bill += medium_Pizza
+elif size == "L":
+    bill += large_pizza
+else:
+    print("Thats no option")
                         
-                        #extras
-                        if pepperoni == "Y":
-                            bill += add_pepperoni
-                        if extra_cheese == "Y":
-                            bill += add_extra_cheese
+#extras
+if pepperoni == "Y":
+    bill += add_pepperoni
+if extra_cheese == "Y":
+    bill += add_extra_cheese
                         
-                        print (f"Thank you for choosing Python Pizza! Your total is ${bill}")
+print (f"Thank you for choosing Python Pizza! Your total is ${bill}")
+
+
+
+    <p>My second code includes a loop to handle invalid input, returning the user to the start.:</p>
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <pre><code>
+small_pizza = 15
+medium_pizza = 20
+large_pizza = 25
+add_pepperoni_small = 2
+add_pepperoni_large = 3
+add_extra_cheese = 1
+bill = 0
+
+# Size and Pepperoni
+while True:
+    size = input("What size pizza do you want? S, M or L: ")
+
+    if size == "S":
+        bill += small_pizza
+        pepperoni = input("Do you want pepperoni? Y or N: ")
+        if pepperoni == "Y":
+            bill += add_pepperoni_small
+        break
+    elif size == "M":
+        bill += medium_pizza
+        pepperoni = input("Do you want pepperoni? Y or N: ")
+        if pepperoni == "Y":
+            bill += add_pepperoni_large
+        break
+    elif size == "L":
+        bill += large_pizza
+        pepperoni = input("Do you want pepperoni? Y or N: ")
+        if pepperoni == "Y":
+            bill += add_pepperoni_large
+        break
+    else:
+        print("Invalid size choice. Please try again.")
+
+# Extra Cheese
+extra_cheese = input("Do you want extra cheese? Y or N: ")
+if extra_cheese == "Y":
+    bill += add_extra_cheese
+
+print(f"Your final bill is: ${bill}")
+
                         
                     </code></pre>
                 </div>
