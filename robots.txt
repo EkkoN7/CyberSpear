@@ -1,15 +1,19 @@
-# robots.txt file for https://github.com/EkkoN7/CyberSpear
+# robots.txt file for CyberSpear
 
-# Allow all search engines access to everything
+# Allow all search engines and AI crawlers access to everything except sensitive files
 User-agent: *
 Disallow: /private/
 Disallow: /tmp/
 Disallow: /backup/
 Disallow: /secret-page.html
+Allow: /
 
-# Allow all crawlers to access everything else
+# Explicitly allow common AI crawlers (e.g., OpenAI, Gemini, Google AI)
+User-agent: OpenAI
+Allow: /
+
+User-agent: Gemini
 Allow: /
 
 # Sitemap location
 Sitemap: https://cyberspear.de/sitemap.xml
-
