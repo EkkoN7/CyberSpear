@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CyberSpear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../CSS/styles.css">
+  <link rel="stylesheet" href="../../../CSS/Blog.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class=".container-fluid">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4"> <img src="../../../../assets/images/Cyberspear/Header.png" height="30px" width="auto" alt="logo"></span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="../../../index.html" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="../../Projects/Projects.html" class="nav-link">Projects</a></li>
+      <li class="nav-item"><a href="../../Tech Discovery Journal/Journal.html" class="nav-link">Tech Discovery Journal</a></li>
+      <li class="nav-item"><a href="../../AboutMe/About.html" class="nav-link">About me</a></li>
+    </ul>
+  </header>
+</section>
+
+
+    </div>
+    <div class="blog">
+      <h1 class = montserrat-h1>Hangman</h1>
+<br />
+    <img src="./images/Hangman_img/hangman.png" height="auto" width="auto">
+    <h3>My Hangman Code: A Simple Explanation</h3>
+    <p><strong>Main.py: The Game's Core</strong></p>
+    <p>The start of my Hangman game is straightforward: First, I retrieve a random English word from an <strong>API</strong> as a JSON object. Using `response.json()`, I then convert this data into a Python object.</p>
+    <p>Next, `functions.py` comes into play. Here, a loop iterates over the selected word and appends each individual character into the `word_list`. This is the foundation that allows the program to check if the player's input is contained within the word.</p>
+
+    <hr>
+
+    <h3>The Game Loop: The Heart of the Game</h3>
+    <p>The game's flow is controlled by a `while` loop. Initially, the condition was that the loop would run as long as the number of lives was greater than 0. This became impractical because it was difficult to break the loop from various points in the code—for example, when the player had correctly guessed the word.</p>
+    <p>That's why I switched to using a <strong>boolean value</strong> called `is_game_over` as the loop condition. This makes it easy to set the game state to `True` from anywhere in the code to end the game.</p>
+    <p>During testing, I also added a few features to improve the player experience:</p>
+    <ul>
+    <li>The player does not lose a life for guessing a character they have already guessed.</li>
+    <li>The number of letters in the word is displayed.</li>
+    <li>Already guessed letters are visible.</li>
+    </ul>
+
+    <hr>
+
+    <h3>The Gameplay: From Guess to Outcome</h3>
+    <p>The actual gameplay is simple: the player enters a single character. A `for` loop then checks if that character is present in the word.</p>
+    <p>If the character is in the word, another loop is used to replace the corresponding placeholder (`_`) in the `display_word` list with the correct letter. If the character is not in the word, the player loses a life. A suitable <strong>ASCII art</strong> graphic is also displayed, which changes with each lost life until the player has no lives left.</p>
+
+    <hr>
+
+    <h3>Acknowledgments</h3>
+    <p>All <strong>ASCII art</strong> and the <strong>API</strong> I used are transparently credited in the README file of my <a href="https://github.com/EkkoN7/Hangman">GitHub repository</a>.</p>
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <pre><code>
+import random
+import requests
+from functions import char_in_word
+from art import hangman_pics, hangman_intro, hangman_game_over
+
+try:
+    response = requests.get('https://random-word-api.herokuapp.com/word')
+    data = response.json()
+    secret_word = data[0]
+except requests.exceptions.RequestException as e:
+    print(f"Fehler bei der Anfrage: {e}")
+
+word_list = []
+word_char = char_in_word(word = secret_word, list_append = word_list)
+life = 6
+display_word = ['_'] * len(secret_word)
+length_word = len(secret_word)
+is_game_over = False
+player_inputs = []
+
+print(hangman_intro)
+print(f"Welcome to Hangman!\nThe secret word is {length_word} letters long.")
+print (hangman_pics[0])
+
+while is_game_over == False:
+    print(display_word)
+    print(f"These are your guesses: {player_inputs}")
+    player_guess = input("Guess a character: ").lower().strip()
+    if player_guess in player_inputs:
+        print("You already guessed that character.")
+        continue
+    elif player_guess not in player_inputs:
+        player_inputs.append(player_guess)
+        if player_guess in word_list:
+            for i in range(len(secret_word)):
+                char = secret_word[i]
+                if player_guess == char:
+                    display_word[i] = char
+                    if "_" not in display_word:
+                        result = "".join(display_word)
+                        print(f"You did it, well done! The secret word was: {secret_word}")
+                        is_game_over = True
+                    else:
+                        continue
+        else:
+            life -=1
+            print(f"Life: {life}")
+            if life == 5:
+                print (hangman_pics[1])
+            elif life == 4:
+                print (hangman_pics[2])
+            elif life == 3:
+                print (hangman_pics[3])
+            elif life == 2:
+                print(hangman_pics[4])
+            elif life == 1:
+                print(hangman_pics[5])
+            elif life == 0:
+                print(hangman_pics[6])
+                print(hangman_game_over)
+                print(f"The secret word was: {secret_word}")
+                is_game_over = True
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+        <p><hr />My functions.py file only contains one function. I usually create a separate file for reusable code, but I suppose I could just put it all in main.py.</p>
+        <div class="container mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <pre><code>
+def char_in_word(word, list_append):
+    for word in word:
+        for char in word:
+            list_append.append(char.lower())
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container text-center">
+          <div class="mb-3">
+            <a href="https://github.com/EkkoN7" class="text-light mx-2" target="_blank">GitHub</a>
+            <a href="https://gitlab.com/EkkoN7" class="text-light mx-2" target="_blank">GitLab</a>
+            <a href="https://www.codewars.com/users/EkkoN7" class="text-light mx-2" target="_blank">Codewars</a>
+            <a href="https://leetcode.com/u/EkkoN7/" class="text-light mx-2" target="_blank">Leetcode</a>
+            <a href="https://www.linkedin.com/in/denisdurban/" class="text-light mx-2" target="_blank">LinkedIn</a>
+            <a href="https://hackerone.com/ekkon7?type=user" class="text-light mx-2" target="_blank">HackerOne</a>
+          </div>
+
+          <div class="mb-3">
+              <p class="m-0">Contact me: <a href="mailto:Cyberspear@outlook.de" target="_blank" class="text-light">CyberSpear@outlook.de</a></p>
+          </div>
+
+          <div class="border-top border-light pt-3">
+            <p>Disclaimer: Content from external platforms is owned by their respective owners.</p>
+            <p class="m-0">&copy; <span id="year"></span> Cyberspear. All rights reserved.</p>
+          </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+
+      // Update the content of the element with id "year"
+      document.getElementById("year").textContent = currentYear;
+    </script>
+
+    </body>
+    </html>
