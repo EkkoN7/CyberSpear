@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CyberSpear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../CSS/styles.css">
+  <link rel="stylesheet" href="../../../CSS/Blog.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<section class=".container-fluid">
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4"> <img src="../../../assets/images/Cyberspear/Header.png" height="30px" width="auto" alt="logo"></span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="../../../index.html" class="nav-link active" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="../../Projects/Projects.html" class="nav-link">Projects</a></li>
+      <li class="nav-item"><a href="../../Tech Discovery Journal/Journal.html" class="nav-link">Tech Discovery Journal</a></li>
+      <li class="nav-item"><a href="../../AboutMe/About.html" class="nav-link">About me</a></li>
+    </ul>
+  </header>
+</section>
+
+
+    </div>
+    <div class="blog">
+      <h1 class = montserrat-h1>PyPaGen</h1>
+    <p>Hello everyone! Finding the right path in IT has been quite a journey for me over the past two years. After exploring various areas, I'm thrilled to have found my footing in <b>cybersecurity</b>. Even within cybersecurity, there are so many exciting avenues, and one that has truly captured my interest is working as a <b>DevSecOps engineer</b>.</p>
+
+    <p>To start building my portfolio and deepen my knowledge, I've planned a few hands-on projects. Today, I'm excited to share my most recent creation: a <b>password generator built with Python</b>!</p>
+
+    <h3>PyPaGen: A Secure Start</h3>
+
+    <p>While this project certainly contains more foundational code, I focused on implementing key principles I've learned, particularly from my boss at work – like always <b>validating user input</b> thoroughly. I also used <b>NIS2 recommendations</b> as a guideline, ensuring the generated password length is a bit higher than the minimum advised.</p>
+
+    <p>My main goal for PyPaGen was <b>randomness</b>. I wanted to create the most random passwords possible, without any recognizable patterns. To achieve this, I intentionally removed the option for users to explicitly set the exact count of numbers, uppercase letters, or special characters. Instead, I aimed for a truly random distribution.</p>
+
+    <p>Here's a snippet of the core logic I used to distribute character types:</p>
+
+    <pre><code>def get_length(user_input, name_count):
+    random_num = random.randint(0, user_input - 1)
+    try:
+        result = user_input // random_num
+    except ZeroDivisionError:
+        return 1
+    return name_count + result
+</code></pre>
+    <p>This function takes the desired password length and uses a division by a random number (always one less than the password length) to determine the count of certain character types. To guarantee that at least one of each chosen character type is always included, I implemented a <code>try-except</code> block to catch <code>ZeroDivisionErrors</code>.</p>
+
+    <p>Then, based on these calculated counts, I used a simple function to add random characters from their respective pools:</p>
+
+    <pre><code>def get_random(name_count, character):
+    for i in range(1, name_count + 1):
+        random_chars = random.choice(character)
+        password_list.append(random_chars)
+</code></pre>
+
+    <p>Finally, to truly mix everything up and ensure the most random password I could create, I used <code>random.shuffle</code> on the final list of characters.</p>
+
+
+
+    <p>This project was a fantastic first step in exploring secure coding practices.</p>
+    <p>I'm really proud of this initial project and the insights it's given me into secure development. For a deeper dive, feel free to check out PyPaGen on my GitHub: <a href="https://github.com/EkkoN7/PyPaGen" target="_blank">https://github.com/EkkoN7/PyPaGen</a></p>
+
+    <p>What are your thoughts on starting small and building foundational projects in cybersecurity? I'd love to hear about your experiences!</p>
+```
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+      // Get the current year
+      const currentYear = new Date().getFullYear();
+
+      // Update the content of the element with id "year"
+      document.getElementById("year").textContent = currentYear;
+    </script>
+
+    </body>
+    </html>
